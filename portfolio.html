@@ -3,25 +3,38 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio | Your Name</title>
+  <title>Portfolio | Boyuan Liu</title>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
   <header id="masthead">
     <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
+      <a href="index.html" id="logo">Boyuan Liu</a>
       <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+		<div class="dropdown">
+		  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Navigation
+		  <span class="caret"></span></button>
+		  <ul class="dropdown-menu">
+		    <li><a href="index.html">About</a></li>
+		    <li><a href="portfolio.html">Portfolio</a></li>
+		    <li><a href="contact.html">Contact</a></li>
+		  </ul>
+		</div>
+
       </nav>
     </div>
   </header>
 
   <div id="main-container" class="container">
+    	<div class = "row">
+    	<div class = "col-sm-6">
     <section class="main-section">
       <h1>Portfolio</h1>
 
@@ -52,16 +65,20 @@
       </div>
 
     </section>
+    </div>
 
+  	<div class = "col-sm-5">
     <section class="sidebar">
       <div id="connect">
-        <h2>Connect with Me</h2>
+        <h2>Connect</h2>
 
         <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
         <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
         <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
       </div>
     </section>
+    </div>
+  </div>
   </div>
 
   <footer>
